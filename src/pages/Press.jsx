@@ -43,6 +43,21 @@ const PRESS = [
         url: 'https://swarthmorephoenix.com/2026/04/30/faculty-and-alum-on-the-erosion-of-free-protest-at-swarthmore/',
       },
       {
+        label: 'SASS Statement on the Swat 9',
+        outlet: 'Swarthmore Voices',
+        url: 'https://swarthmorevoices.com/content-1/2026/6/3/sassstatementontheswat9',
+      },
+      {
+        label: 'ORAA Statement on the Swat 9',
+        outlet: 'Swarthmore Voices',
+        url: 'https://swarthmorevoices.com/content-1/2026/6/3/oraastatementontheswat9',
+      },
+      {
+        label: 'ENLACE Statement on the Swat 9',
+        outlet: 'Swarthmore Voices',
+        url: 'https://swarthmorevoices.com/content-1/2026/6/3/enlacestatementontheswat9',
+      },
+      {
         label: 'Campus organizations in support of the Swarthmore 9',
         outlet: 'Swarthmore Voices',
         url: 'https://swarthmorevoices.com/content-1/2026/5/7/b4qfc4egf429ww89yh4ldz881yqqul',
