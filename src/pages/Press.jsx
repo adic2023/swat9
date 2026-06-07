@@ -8,17 +8,23 @@ const PRESS = [
     category: 'News',
     items: [
       {
-        label: 'Swarthmore students suspended after pro-Palestinian encampment swept',
+        label: 'Swarthmore Students Suspended After pro-Palestinian Encampment Swept',
         outlet: 'The Guardian',
         url: 'https://www.theguardian.com/us-news/2025/may/02/swarthmore-students-suspended-pro-palestinian-camp',
       },
       {
-        label: 'Swarthmore 9 defendant Jace Boland speaks out',
+        label: 'The Trial for the Swarthmore 9 Approaches',
+        outlet: 'Delco Times',
+        url: 'https://www.delcotimes.com/2026/06/06/finger-pointing-confusion-as-trial-for-swarthmore-9-nears/',
+      },
+
+      {
+        label: 'Swarthmore 9 Defendant Jace Boland Speaks Out',
         outlet: 'DelCo Rising',
         url: 'https://delcorising.substack.com/p/swarthmore-9-defendant-jace-boland',
       },
       {
-        label: 'Swarthmore student set to face trial over anti-genocide protests',
+        label: 'Swarthmore Student Set to Face Trial over Anti-Genocide Protests',
         outlet: '2 Be Determined',
         url: 'https://www.2bedetermined.co/news/swarthmore-student-set-to-face-trial-over-anti-genocide-protests',
       }
@@ -28,17 +34,17 @@ const PRESS = [
     category: 'Campus Voice',
     items: [
       {
-        label: 'Swarthmore called the police on our protest. Now I\'m preparing for trial.',
+        label: 'Swarthmore Called the Police on our Protest. Now I\'m Preparing for Trial.',
         outlet: 'The Swarthmore Phoenix',
         url: 'https://swarthmorephoenix.com/2026/04/16/swarthmore-called-the-police-on-our-protest-now-im-preparing-for-trial/',
       },
       {
-        label: 'SGO resolution urging the dismissal of trespassing charges',
+        label: 'SGO Resolution Urging the Dismissal of Trespassing Charges',
         outlet: 'The Swarthmore Phoenix',
         url: 'https://swarthmorephoenix.com/2026/04/23/sgo-resolution-urging-the-dismissal-of-trespassing-charges/',
       },
       {
-        label: 'Faculty on the erosion of free speech at Swarthmore',
+        label: 'Faculty on the Erosion of Free Speech at Swarthmore',
         outlet: 'The Swarthmore Phoenix',
         url: 'https://swarthmorephoenix.com/2026/04/30/faculty-and-alum-on-the-erosion-of-free-protest-at-swarthmore/',
       },
@@ -58,7 +64,7 @@ const PRESS = [
         url: 'https://swarthmorevoices.com/content-1/2026/6/3/enlacestatementontheswat9',
       },
       {
-        label: 'Campus organizations in support of the Swarthmore 9',
+        label: 'Campus Organizations in Support of the Swarthmore 9',
         outlet: 'Swarthmore Voices',
         url: 'https://swarthmorevoices.com/content-1/2026/5/7/b4qfc4egf429ww89yh4ldz881yqqul',
       },
