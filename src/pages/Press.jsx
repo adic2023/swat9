@@ -3,6 +3,7 @@ import Layout from '../Layout'
 import alumThumb from '../assets/alumThumb.png'
 import abSchoolThumbnail from '../assets/abSchoolThumbnail.png'
 import pressConf from '../assets/4g5XD8vgouI-HD.jpg'
+import inq from '../assets/inqThum.jpg'
 
 const PRESS = [
   {
@@ -12,6 +13,7 @@ const PRESS = [
         label: '‘Swarthmore 9’ Protesters Urge Delco DA to Drop Trespassing Case Tied to pro-Palestinian Encampment',
         outlet: 'The Philadelphia Inquirer',
         url: 'https://www.inquirer.com/crime/swarthmore-college-protesters-trespassing-charges-20260609.html',
+        thumbnail: inq,
       },
       {
         label: '‘Swarthmore 9’ Appear in Court to Face Trespassing Charges Tied to Gaza Protest Encampment',
