@@ -2,20 +2,32 @@ import { useState, useEffect } from 'react'
 import Layout from '../Layout'
 import alumThumb from '../assets/alumThumb.png'
 import abSchoolThumbnail from '../assets/abSchoolThumbnail.png'
+import pressConf from 'src/assets/4g5XD8vgouI-HD.jpg'
 
 const PRESS = [
   {
     category: 'News',
     items: [
       {
-        label: 'Swarthmore Students Suspended After pro-Palestinian Encampment Swept',
-        outlet: 'The Guardian',
-        url: 'https://www.theguardian.com/us-news/2025/may/02/swarthmore-students-suspended-pro-palestinian-camp',
+        label: '‘Swarthmore 9’ Protesters Urge Delco DA to Drop Trespassing Case Tied to pro-Palestinian Encampment',
+        outlet: 'The Philadelphia Inquirer',
+        url: 'https://www.inquirer.com/crime/swarthmore-college-protesters-trespassing-charges-20260609.html',
+      },
+      {
+        label: '‘Swarthmore 9’ Appear in Court to Face Trespassing Charges Tied to Gaza Protest Encampment',
+        outlet: 'WHYY',
+        url: 'https://whyy.org/articles/swarthmore-students-protest-gaza-encampment-court-trespassing/',
       },
       {
         label: 'The Trial for the Swarthmore 9 Approaches',
         outlet: 'Delco Times',
         url: 'https://www.delcotimes.com/2026/06/06/finger-pointing-confusion-as-trial-for-swarthmore-9-nears/',
+      },
+
+      {
+        label: 'Swarthmore Students Suspended After pro-Palestinian Encampment Swept',
+        outlet: 'The Guardian',
+        url: 'https://www.theguardian.com/us-news/2025/may/02/swarthmore-students-suspended-pro-palestinian-camp',
       },
 
       {
@@ -73,6 +85,12 @@ const PRESS = [
   {
     category: 'Video & Audio',
     items: [
+      {
+        label: 'SWAT 9 PRESS CONFERENCE: June 9th, 2026',
+        outlet: 'hate5six',
+        url: 'https://youtu.be/4g5XD8vgouI?si=p9O-eALPxiqJhxtE',
+        thumbnail: pressConf,
+      },
       {
         label: 'Interview with the Swarthmore 9',
         outlet: 'Millennials Are Killing Capitalism',
