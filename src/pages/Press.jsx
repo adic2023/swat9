@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Layout from '../Layout'
 import alumThumb from '../assets/alumThumb.png'
 import abSchoolThumbnail from '../assets/abSchoolThumbnail.png'
-import pressConf from 'src/assets/4g5XD8vgouI-HD.jpg'
+import pressConf from '../assets/4g5XD8vgouI-HD.jpg'
 
 const PRESS = [
   {
