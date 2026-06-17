@@ -78,6 +78,11 @@ const TIMELINE = [
   },
   { marker: true },
   {
+    date: 'June 22, 2026',
+    text: "Motion to dismiss hearing for the Swarthmore 9. In court, Judge Pileggi will hear the defense's argument to dismiss the charges and decide whether or not the Swat 9 will go to trial.",
+    future: true,
+  },
+  {
     date: 'June 29, 2026',
     text: 'If the charges are not dropped, the Swarthmore 9 will begin trial. If convicted, those charged face up to a year in prison.',
     future: true,
