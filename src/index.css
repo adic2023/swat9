@@ -151,10 +151,6 @@ a {
   animation: breaking-scroll 40s linear infinite;
 }
 
-.breaking-ticker:hover .breaking-ticker-track {
-  animation-play-state: paused;
-}
-
 .breaking-ticker-item {
   display: inline-flex;
   align-items: center;
