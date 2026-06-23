@@ -76,15 +76,14 @@ const TIMELINE = [
     date: 'October 27, 2025',
     text: 'The Swarthmore 9 have their arraignment and third-degree misdemeanor charges formally confirmed. Those present plead not-guilty, affirming that it is right to protest genocide.',
   },
-  { marker: true },
   {
     date: 'June 22, 2026',
-    text: "Motion to dismiss hearing for the Swarthmore 9. In court, Judge Pileggi will hear the defense's argument to dismiss the charges and decide whether or not the Swat 9 will go to trial.",
-    future: true,
+    text: "Motion to dismiss hearing for the Swarthmore 9. In court, Judge Pileggi decided that the case has enough evidence to proceed with trial. Trial date set.",
   },
+  { marker: true },
   {
-    date: 'June 29, 2026',
-    text: 'If the charges are not dropped, the Swarthmore 9 will begin trial. If convicted, those charged face up to a year in prison.',
+    date: 'July 1st, 2026',
+    text: 'The Swarthmore 9 will begin trial, becoming the first activists to ever face criminal trial for pro-Palestine protest in the greater Philadelphia area. If convicted, those charged face up to a year in prison.',
     future: true,
   },
 ]
