@@ -78,7 +78,7 @@ const TIMELINE = [
   },
   {
     date: 'June 22, 2026',
-    text: "Motion to dismiss hearing for the Swarthmore 9. In court, Judge Pileggi decided that the case has enough evidence to proceed with trial. Trial date set.",
+    text: "Motion to dismiss hearing for the Swarthmore 9. In court, Judge Pileggi decided that the case has enough evidence to proceed with trial.",
   },
   { marker: true },
   {
@@ -101,7 +101,7 @@ export default function Home({ dark, setDark }) {
 
 
         <div className="home-lede">
-          <h1 className="masthead home-lede-heading">On June 29,</h1>
+          <h1 className="masthead home-lede-heading">On July 1st,</h1>
           <p>The "Swarthmore 9" are slated to begin trial for third-degree misdemeanor trespassing charges initiated by Swarthmore College and pursued by Delaware County DA Tanner Rouse. After being violently arrested by over 30 police officers at a pro-Palestine encampment launched by Swarthmore SJP, the 9 protestors are facing criminal charges which carry a maximum sentence of up to a year in prison. The Hossam Shabat Liberated Zone was launched in honor of martyred Palestinian journalist Hossam Shabbat, who was assassinated by Israel on March 24, 2025. It called on Swarthmore to drop all ties with Cisco Systems, a primary BDS target for their complicity in the ongoing genocide in Gaza. Instead of negotiating with protestors, President Valerie Smith and Swarthmore college chose brute force. Now, we need your help to free the Swarthmore 9.</p>
         </div>
         <div className="home-actions">

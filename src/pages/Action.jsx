@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Layout from '../Layout'
 
 const DATES = [
-  { value: 'june-29', label: 'June 29' },
-  { value: 'june-30', label: 'June 30' },
   { value: 'july-1',  label: 'July 1' },
   { value: 'july-2',  label: 'July 2' },
+  { value: 'july-6', label: 'July 6' },
+  { value: 'july-7', label: 'July 7' },
 ]
 
 export default function Action({ dark, setDark }) {
