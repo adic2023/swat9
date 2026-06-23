@@ -354,6 +354,8 @@ a {
 
   @media (max-width: 640px) {
     padding-top: 1rem;
+    padding-inline: 1rem;
+    max-width: 100%;
   }
 }
 
