@@ -25,7 +25,7 @@ function SunIcon() {
   )
 }
 
-const TRIAL_DATE = new Date('2026-06-29T09:00:00')
+const TRIAL_DATE = new Date('2026-07-01T09:00:00')
 
 function getTimeLeft() {
   const diff = TRIAL_DATE - Date.now()
