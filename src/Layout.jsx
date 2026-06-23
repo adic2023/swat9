@@ -132,6 +132,17 @@ export default function Layout({ children, showPopup: enablePopup = false, dark,
 
   return (
     <div className={`app ${dark ? 'theme-dark' : 'theme-light'}`}>
+      <NavLink to="/court-support" className="breaking-ticker">
+        <div className="breaking-ticker-track">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <span className="breaking-ticker-item" key={i}>
+              <span className="breaking-ticker-tag">Breaking</span>
+              Swat 9 set to begin trial July 1st
+            </span>
+          ))}
+        </div>
+      </NavLink>
+
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <defs>
           <filter id="newsprint-grain">

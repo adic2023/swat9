@@ -134,6 +134,51 @@ a {
   opacity: 0.6;
 }
 
+.breaking-ticker {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #3c0008;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.breaking-ticker-track {
+  display: inline-flex;
+  align-items: center;
+  animation: breaking-scroll 40s linear infinite;
+}
+
+.breaking-ticker:hover .breaking-ticker-track {
+  animation-play-state: paused;
+}
+
+.breaking-ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "newshound", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 1.25rem;
+}
+
+.breaking-ticker-tag {
+  background: #fff;
+  color: #3c0008;
+  padding: 0.1rem 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+@keyframes breaking-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 .site-header {
   display: flex;
   align-items: center;
