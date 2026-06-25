@@ -1,5 +1,12 @@
 import Layout from '../Layout'
 
+const TEXT = [
+    {
+    label: 'A Message From the Swarthmore 9',
+    note: 'Our Political Approach',
+    url: 'https://docs.google.com/document/d/1RSH4dl_iqagRhCoHd-D35U3bBNb8SuO-EQOOeTdBMsM/edit?usp=sharing',
+  },
+]
 const CONTACTS = [
   {
     name: 'District Attorney Tanner Rouse',
@@ -19,11 +26,6 @@ const CONTACTS = [
 ]
 
 const RESOURCES = [
-  {
-    label: 'A Message From the Swarthmore 9',
-    note: 'Our Political Approach',
-    url: 'https://docs.google.com/document/d/1RSH4dl_iqagRhCoHd-D35U3bBNb8SuO-EQOOeTdBMsM/edit?usp=sharing',
-  },
   {
     label: 'Alumni Call / Email Script',
     note: 'Can be adapted for any sympathetic supporter to call and email the college',
@@ -48,6 +50,21 @@ export default function Resources({ dark, setDark }) {
       </div>
 
       <div className="resources-wrap">
+
+        <section className="resources-section">
+          <h2 className="press-category">Statement</h2>
+          <ul className="resource-list">
+            {TEXT.map(({ label, note, url }) => (
+              <li key={url} className="resource-item">
+                <a className="resource-link" href={url} target="_blank" rel="noopener noreferrer">
+                  <span className="resource-title">{label}</span>
+                  {note && <span className="resource-note">{note}</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <section className="resources-section">
           <h2 className="press-category">Contact</h2>
           <ul className="contact-list">
