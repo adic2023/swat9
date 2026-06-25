@@ -21,6 +21,7 @@ const CONTACTS = [
 const RESOURCES = [
   {
     label: 'A Message From the Swarthmore 9',
+    note: 'Our Political Approach',
     url: 'https://docs.google.com/document/d/1RSH4dl_iqagRhCoHd-D35U3bBNb8SuO-EQOOeTdBMsM/edit?usp=sharing',
   },
   {
