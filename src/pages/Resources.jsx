@@ -20,6 +20,10 @@ const CONTACTS = [
 
 const RESOURCES = [
   {
+    label: 'A Message From the Swarthmore 9',
+    url: 'https://docs.google.com/document/d/1RSH4dl_iqagRhCoHd-D35U3bBNb8SuO-EQOOeTdBMsM/edit?usp=sharing',
+  },
+  {
     label: 'Alumni Call / Email Script',
     note: 'Can be adapted for any sympathetic supporter to call and email the college',
     url: 'https://docs.google.com/document/d/1gHlb6XwRz0TDxGSDaFEK561RLsul1ExQ-vGTPyP0hHU/edit?usp=drivesdk',

@@ -10,6 +10,12 @@ const PRESS = [
     category: 'News',
     items: [
       {
+        label: '‘AFSC calls for dropping charges against Swarthmore 9',
+        outlet: 'American Friends Service Committee',
+        url: 'https://afsc.org/newsroom/afsc-calls-dropping-charges-against-swarthmore-9',
+      },
+      
+      {
         label: '‘Swarthmore 9’ Protesters Urge Delco DA to Drop Trespassing Case Tied to pro-Palestinian Encampment',
         outlet: 'The Philadelphia Inquirer',
         url: 'https://www.inquirer.com/crime/swarthmore-college-protesters-trespassing-charges-20260609.html',
