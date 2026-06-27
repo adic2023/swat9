@@ -27,6 +27,11 @@ const PRESS = [
         url: 'https://whyy.org/articles/swarthmore-students-protest-gaza-encampment-court-trespassing/',
       },
       {
+        label: 'Swarthmore 9 on trial for pro-Palestine encampment',
+        outlet: 'Workers World Party',
+        url: 'https://www.workers.org/2026/06/93443/',
+      },
+      {
         label: 'The Trial for the Swarthmore 9 Approaches',
         outlet: 'Delco Times',
         url: 'https://www.delcotimes.com/2026/06/06/finger-pointing-confusion-as-trial-for-swarthmore-9-nears/',
