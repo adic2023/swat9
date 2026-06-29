@@ -39,8 +39,6 @@ function getTimeLeft() {
 }
 
 function pad(n) { return String(n).padStart(2, '0') }
-const TICKER_DURATION = 40
-const TICKER_ORIGIN = Date.now()
 
 function Countdown() {
   const [time, setTime] = useState(getTimeLeft)
@@ -134,20 +132,6 @@ export default function Layout({ children, showPopup: enablePopup = false, dark,
 
   return (
     <div className={`app ${dark ? 'theme-dark' : 'theme-light'}`}>
-      <NavLink to="/court-support" className="breaking-ticker">
-        <div
-          className="breaking-ticker-track"
-          style={{ animationDelay: `-${((Date.now() - TICKER_ORIGIN) / 1000) % TICKER_DURATION}s` }}
-        >
-          {Array.from({ length: 8 }).map((_, i) => (
-            <span className="breaking-ticker-item" key={i}>
-              <span className="breaking-ticker-tag">Breaking</span>
-              Swat 9 set to begin trial July 1st
-            </span>
-          ))}
-        </div>
-      </NavLink>
-
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <defs>
           <filter id="newsprint-grain">
