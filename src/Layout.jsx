@@ -30,7 +30,6 @@ const NAV_LINKS = [
   { to: '/statement', label: 'Statement' },
   { to: '/press', label: 'Press' },
   { to: '/cisco', label: 'Cisco' },
-  { to: '/resources', label: 'Resources' },
 ]
 
 // eslint-disable-next-line no-unused-vars -- kept for when the footer is re-enabled

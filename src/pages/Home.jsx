@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react'
+// eslint-disable-next-line no-unused-vars -- Link is used by the temporarily hidden actions section
 import { Link } from 'react-router-dom'
 import Layout from '../Layout'
 import homeBanner from '../assets/home_banner.png'
@@ -29,6 +30,7 @@ function TimelineItem({ entry }) {
   )
 }
 
+// eslint-disable-next-line no-unused-vars -- kept for when the actions section is re-enabled
 const ACTIONS = [
   {
     text: 'Tell Swarthmore and DA Tanner Rouse to drop the charges',
@@ -107,6 +109,7 @@ export default function Home({ dark, setDark }) {
           <h1 className="masthead home-lede-heading">On July 1st,</h1>
           <p>The "Swarthmore 9" are slated to begin trial for third-degree misdemeanor trespassing charges initiated by Swarthmore College and pursued by Delaware County DA Tanner Rouse. After being violently arrested by over 30 police officers at a pro-Palestine encampment launched by Swarthmore SJP, the 9 protestors are facing criminal charges which carry a maximum sentence of up to a year in prison. The Hossam Shabat Liberated Zone was launched in honor of martyred Palestinian journalist Hossam Shabbat, who was assassinated by Israel on March 24, 2025. It called on Swarthmore to drop all ties with Cisco Systems, a primary BDS target for their complicity in the ongoing genocide in Gaza. Instead of negotiating with protestors, President Valerie Smith and Swarthmore college chose brute force. Now, we need your help to free the Swarthmore 9.</p>
         </div>
+        {/* "What to do?" section temporarily hidden
         <div className="home-actions">
           <h2 className="masthead home-lede-heading"><span className="masthead-sub">WHAT TO DO?</span></h2>
           <p className="home-actions-hint">Click any item to learn more</p>
@@ -118,6 +121,7 @@ export default function Home({ dark, setDark }) {
             ))}
           </ol>
         </div>
+        */}
       </div>
 
       <div className="home-banner-wrap">
