@@ -18,11 +18,12 @@ function TimelineItem({ entry }) {
   }, [])
 
   return (
-    <div className={`timeline-item timeline-item--${entry.side}${entry.future ? ' timeline-item--future' : ''}`}>
+    <div className={`timeline-item timeline-item--${entry.side}${entry.future ? ' timeline-item--future' : ''}${entry.strike ? ' timeline-item--strike' : ''}`}>
       <div className="timeline-dot-col"><div className="timeline-dot" /></div>
       <div ref={boxRef} className="timeline-content">
         <p className="timeline-date">{entry.date}</p>
         <p className="timeline-text">{entry.text}</p>
+        {entry.note && <p className="timeline-note">{entry.note}</p>}
       </div>
     </div>
   )
@@ -85,6 +86,8 @@ const TIMELINE = [
     date: 'July 1st, 2026',
     text: 'The Swarthmore 9 will begin trial, becoming the first activists to ever face criminal trial for pro-Palestine protest in the greater Philadelphia area. If convicted, those charged face up to a year in prison.',
     future: true,
+    strike: true,
+    note: 'The trial is no longer happening. We are putting together a statement check back soon.',
   },
 ]
 
