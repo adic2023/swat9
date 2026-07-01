@@ -45,7 +45,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home dark={dark} setDark={setDark} />} />
+      <Route path="/" element={<Statement dark={dark} setDark={setDark} />} />
+      <Route path="/home" element={<Home dark={dark} setDark={setDark} />} />
       <Route path="/pledge" element={<Pledge dark={dark} setDark={setDark} />} />
       <Route path="/court-support" element={<Navigate to="/" replace />} />
       <Route path="/statement" element={<Statement dark={dark} setDark={setDark} />} />

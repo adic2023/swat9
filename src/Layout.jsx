@@ -67,6 +67,7 @@ function MailingListForm() {
 }
 
 export default function Layout({ children, showPopup: enablePopup = false, dark, setDark }) {
+  // eslint-disable-next-line no-unused-vars -- showTop drives the disabled back-to-top button
   const [showTop, setShowTop] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
   const formUrl = 'https://form.jotform.com/261336169617058'
