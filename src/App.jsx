@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './Layout'
 import JotFormData from './JotFormData'
 import Cisco from './pages/Cisco'
+import Statement from './pages/Statement'
 import Press from './pages/Press'
 import Resources from './pages/Resources'
 import Home from './pages/Home'
@@ -47,6 +48,7 @@ function App() {
       <Route path="/" element={<Home dark={dark} setDark={setDark} />} />
       <Route path="/pledge" element={<Pledge dark={dark} setDark={setDark} />} />
       <Route path="/court-support" element={<Navigate to="/" replace />} />
+      <Route path="/statement" element={<Statement dark={dark} setDark={setDark} />} />
       <Route path="/cisco" element={<Cisco dark={dark} setDark={setDark} />} />
       <Route path="/press" element={<Press dark={dark} setDark={setDark} />} />
       <Route path="/resources" element={<Resources dark={dark} setDark={setDark} />} />
