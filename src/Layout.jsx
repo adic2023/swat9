@@ -25,41 +25,6 @@ function SunIcon() {
   )
 }
 
-const TRIAL_DATE = new Date('2026-07-01T09:00:00')
-
-function getTimeLeft() {
-  const diff = TRIAL_DATE - Date.now()
-  if (diff <= 0) return null
-  return {
-    d: Math.floor(diff / 86400000),
-    h: Math.floor((diff % 86400000) / 3600000),
-    m: Math.floor((diff % 3600000) / 60000),
-    s: Math.floor((diff % 60000) / 1000),
-  }
-}
-
-function pad(n) { return String(n).padStart(2, '0') }
-
-function Countdown() {
-  const [time, setTime] = useState(getTimeLeft)
-
-  useEffect(() => {
-    const id = setInterval(() => setTime(getTimeLeft()), 1000)
-    return () => clearInterval(id)
-  }, [])
-
-  if (!time) return <span className="header-countdown">Trial begins today</span>
-
-  return (
-    <div className="header-countdown">
-      <span className="header-countdown-label">Time till Trial</span>
-      <span className="header-countdown-time">
-        {time.d}d {pad(time.h)}h {pad(time.m)}m
-      </span>
-    </div>
-  )
-}
-
 const NAV_LINKS = [
   { to: '/pledge', label: 'Pledge' },
   { to: '/press', label: 'Press' },
@@ -141,9 +106,10 @@ export default function Layout({ children, showPopup: enablePopup = false, dark,
       </svg>
 
       <header className="site-header">
-        <NavLink to="/" className="site-name" style={{ textDecoration: 'none' }}>The Swat IX</NavLink>
+        <NavLink to="/" className="site-name" style={{ textDecoration: 'none' }}>
+          The Swat IX<span className="site-name-archive">[ARCHIVE]</span>
+        </NavLink>
         <div className="header-actions">
-          <Countdown />
           <button className="theme-toggle" onClick={() => setDark(!dark)} aria-label="Toggle theme">
             {dark ? <MoonIcon /> : <SunIcon />}
           </button>
