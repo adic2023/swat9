@@ -10,10 +10,10 @@
   color: var(--fg);
   position: relative;
   transition: background 0.2s, color 0.2s;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 
   @media (max-width: 640px) {
-    padding-bottom: 9rem;
+    padding-bottom: 3rem;
   }
 }
 

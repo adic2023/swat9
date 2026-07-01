@@ -33,6 +33,7 @@ const NAV_LINKS = [
   { to: '/resources', label: 'Resources' },
 ]
 
+// eslint-disable-next-line no-unused-vars -- kept for when the footer is re-enabled
 function MailingListForm() {
   const [email, setEmail] = useState('')
   const [done, setDone] = useState(false)
@@ -152,11 +153,13 @@ export default function Layout({ children, showPopup: enablePopup = false, dark,
         </div>
       )}
 
+      {/* Footer temporarily disabled
       <footer className="site-footer">
         <a className="footer-email" href="mailto:contact@swarthmore9.com">contact@swarthmore9.com</a>
         <a className="footer-petition" href="https://actionnetwork.org/petitions/demand-swarthmore-drop-all-charges-for-student-protestors" target="_blank" rel="noopener noreferrer">Sign the Petition</a>
         <MailingListForm />
       </footer>
+      */}
 
       {showTop && (
         <button
