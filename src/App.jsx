@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './Layout'
 import JotFormData from './JotFormData'
-import Action from './pages/Action'
 import Cisco from './pages/Cisco'
 import Press from './pages/Press'
 import Resources from './pages/Resources'
@@ -47,7 +46,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home dark={dark} setDark={setDark} />} />
       <Route path="/pledge" element={<Pledge dark={dark} setDark={setDark} />} />
-      <Route path="/court-support" element={<Action dark={dark} setDark={setDark} />} />
+      <Route path="/court-support" element={<Navigate to="/" replace />} />
       <Route path="/cisco" element={<Cisco dark={dark} setDark={setDark} />} />
       <Route path="/press" element={<Press dark={dark} setDark={setDark} />} />
       <Route path="/resources" element={<Resources dark={dark} setDark={setDark} />} />

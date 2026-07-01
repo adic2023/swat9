@@ -62,7 +62,6 @@ function Countdown() {
 
 const NAV_LINKS = [
   { to: '/pledge', label: 'Pledge' },
-  { to: '/court-support', label: 'Court Support' },
   { to: '/press', label: 'Press' },
   { to: '/cisco', label: 'Cisco' },
   { to: '/resources', label: 'Resources' },
