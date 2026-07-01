@@ -161,6 +161,7 @@ export default function Layout({ children, showPopup: enablePopup = false, dark,
       </footer>
       */}
 
+      {/* Back-to-top button temporarily disabled
       {showTop && (
         <button
           className="scroll-top"
@@ -172,6 +173,7 @@ export default function Layout({ children, showPopup: enablePopup = false, dark,
           </svg>
         </button>
       )}
+      */}
     </div>
   )
 }
