@@ -10,10 +10,10 @@
   color: var(--fg);
   position: relative;
   transition: background 0.2s, color 0.2s;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 
   @media (max-width: 640px) {
-    padding-bottom: 3rem;
+    padding-bottom: 9rem;
   }
 }
 
@@ -55,22 +55,8 @@ a {
   }
 }
 
-.footer-petition {
-  font-family: "newshound", sans-serif;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--bg);
-  background: var(--fg);
-  text-decoration: none;
-  padding: 0.3rem 0.75rem;
-
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
 .footer-email,
+.footer-privacy,
 .footer-mailing {
   color: var(--fg);
   text-decoration: none;
@@ -379,6 +365,32 @@ a {
   font-family: "newshound-headline", sans-serif;
   font-weight: 200;
   font-style: normal;
+}
+
+.policy-updated {
+  font-family: "newshound-subhead", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  opacity: 0.6;
+}
+
+.policy-heading {
+  font-family: "newshound-banner", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--fg) 25%, transparent);
+}
+
+.policy-list {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+
+  li {
+    margin: 0 0 0.6rem;
+  }
 }
 
 .masthead-rule {

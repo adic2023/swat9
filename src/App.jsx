@@ -6,6 +6,7 @@ import Cisco from './pages/Cisco'
 import Statement from './pages/Statement'
 import Press from './pages/Press'
 import Home from './pages/Home'
+import Privacy from './pages/Privacy'
 
 function Pledge({ dark, setDark }) {
   return (
@@ -51,6 +52,7 @@ function App() {
       <Route path="/cisco" element={<Cisco dark={dark} setDark={setDark} />} />
       <Route path="/press" element={<Press dark={dark} setDark={setDark} />} />
       <Route path="/resources" element={<Navigate to="/" replace />} />
+      <Route path="/privacy" element={<Privacy dark={dark} setDark={setDark} />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
