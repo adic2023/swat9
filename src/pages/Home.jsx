@@ -1,5 +1,4 @@
 import { useRef, useEffect } from 'react'
-// eslint-disable-next-line no-unused-vars -- Link is used by the temporarily hidden actions section
 import { Link } from 'react-router-dom'
 import Layout from '../Layout'
 import homeBanner from '../assets/home_banner.png'
@@ -18,14 +17,24 @@ function TimelineItem({ entry }) {
     return () => observer.disconnect()
   }, [])
 
+  const inner = (
+    <>
+      <p className="timeline-date">{entry.date}</p>
+      <p className="timeline-text">{entry.text}</p>
+      {entry.note && <p className="timeline-note">{entry.note}</p>}
+    </>
+  )
+
+  const contentClass = `timeline-content${entry.link ? ' timeline-content--link' : ''}`
+
   return (
     <div className={`timeline-item timeline-item--${entry.side}${entry.future ? ' timeline-item--future' : ''}${entry.strike ? ' timeline-item--strike' : ''}`}>
       <div className="timeline-dot-col"><div className="timeline-dot" /></div>
-      <div ref={boxRef} className="timeline-content">
-        <p className="timeline-date">{entry.date}</p>
-        <p className="timeline-text">{entry.text}</p>
-        {entry.note && <p className="timeline-note">{entry.note}</p>}
-      </div>
+      {entry.to ? (
+        <Link ref={boxRef} to={entry.to} className={contentClass}>{inner}</Link>
+      ) : (
+        <div ref={boxRef} className={contentClass}>{inner}</div>
+      )}
     </div>
   )
 }
@@ -83,13 +92,19 @@ const TIMELINE = [
     date: 'June 22, 2026',
     text: "Motion to dismiss hearing for the Swarthmore 9. In court, Judge Pileggi decided that the case has enough evidence to proceed with trial.",
   },
-  { marker: true },
   {
     date: 'July 1st, 2026',
     text: 'The Swarthmore 9 will begin trial, becoming the first activists to ever face criminal trial for pro-Palestine protest in the greater Philadelphia area. If convicted, those charged face up to a year in prison.',
-    future: true,
     strike: true,
-    note: 'The trial is no longer happening. We are putting together a statement check back soon.',
+    note: 'The trial is no longer happening.',
+  },
+  { marker: true },
+  {
+    date: 'July 1st, 2026',
+    text: 'Statement Released',
+    to: '/statement',
+    link: true,
+    note: 'Read the full statement →',
   },
 ]
 
@@ -134,7 +149,7 @@ export default function Home({ dark, setDark }) {
           {TIMELINE_WITH_SIDES.map((entry, i) =>
             entry.marker ? (
               <div key={i} className="timeline-now-wrap">
-                <span className="timeline-now">WE ARE HERE</span>
+                <span className="timeline-now">TODAY</span>
               </div>
             ) : (
               <TimelineItem key={i} entry={entry} />
